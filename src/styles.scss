@@ -1,0 +1,8 @@
+@import '~@angular/material/theming';
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+.header-component {
+    margin: -8px;
+    padding: 10px;
+    background-color: #44475a;
+}
