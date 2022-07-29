@@ -1,0 +1,35 @@
+@import 'src/assets/styles/fonts.scss';
+@import 'src/assets/styles/colors.scss';
+
+.app-navigation {
+    margin-top: 8px;
+    padding: 30px 20px 30px 20px;
+    background-color: $theme-app-header-background;
+}
+
+.border-bottom-light {border-bottom: 1px solid #EEE;}
+
+.nav-menu {
+    color: #000000;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+    transition: all 0.5s ease-in-out;
+
+    .primary-nav-anchor {
+        color: #000000 !important;
+        cursor: pointer;
+    }
+
+    .navigation-menu-item {
+        text-decoration: none;
+    }
+
+    .primary-nav-anchor:not(.active-menu-item) {
+
+        &:hover {
+            color: $theme-primary;
+            border-bottom: 2px solid $theme-nav-menu-accent;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}

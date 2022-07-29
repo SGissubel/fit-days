@@ -12,6 +12,7 @@ const routes: Routes = [
     path: 'home',
     component: LandingPageComponent
   },
+  // { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

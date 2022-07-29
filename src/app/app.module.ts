@@ -12,6 +12,8 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './wrapper/header/header.component';
 import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FooterComponent } from './wrapper/footer/footer.component';
+import { NavigationComponent } from './wrapper/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     LandingPageComponent,
     CalendarComponent,
     DayComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

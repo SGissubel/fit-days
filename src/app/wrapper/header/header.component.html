@@ -1,18 +1,8 @@
 <mat-toolbar fxFlex="row">
-    <div fxLayoutAlign="start center">
-        <button mat-icon-button class="example-icon">
-            <mat-icon>menu</mat-icon>
-        </button>
-    </div>
     <div fxLayoutAlign="start center" fxFlexOffset="20px">
-        <span class="header-title">Fit Days</span>
+        <a [routerLink]="[ '/home']" class="header-title">Fit Days</a>
     </div>
     <div fxFlex></div>
-    <div fxLayoutAlign="end center" fxFlexOffset="20px">
-        <button mat-icon-button class="example-icon favorite-icon">
-            <mat-icon>favorite</mat-icon>
-        </button>
-    </div>
     <div fxLayoutAlign="end center" fxFlexOffset="20px">
         <button mat-icon-button class="example-icon">
             <mat-icon>share</mat-icon>

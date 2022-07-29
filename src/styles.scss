@@ -1,5 +1,8 @@
 @import '~@angular/material/theming';
 @import '~@angular/cdk/overlay-prebuilt.css';
+@import 'src/assets/styles/icons.scss';
+@import 'src/assets/styles/fonts.scss';
+@import 'src/assets/styles/colors.scss';
 
 .header-component {
     margin: -8px;
