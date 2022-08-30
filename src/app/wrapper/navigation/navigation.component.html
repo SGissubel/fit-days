@@ -1,6 +1,6 @@
 <header class="app-navigation border-bottom-light"> 
     <div>
-        <div class="nav-menu" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+        <div class="nav-menu nav-menu-dark" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
             <a
                 class="primary-nav-anchor navigation-menu-item"
                 matTooltip="Home"
@@ -26,34 +26,15 @@
             >
                 Calendar
             </a>
-            <a
+            <!-- <a
                 class="primary-nav-anchor navigation-menu-item"
                 fxLayoutAlign="center"
                 matTooltip=""
                 [routerLink]="['home']"
             >
-                Calendar
-            </a>
-            <ng-container *ngIf="loggedIn; else loggedOut">
-                <a
-                    class="primary-nav-anchor navigation-menu-item"
-                    fxLayoutAlign="center"
-                    matTooltip=""
-                    [routerLink]="['log-in', ]"
-                >
-                    Log Out
-                </a>
-            </ng-container>
-            <ng-template #elseTemplate>
-                <a
-                    class="primary-nav-anchor navigation-menu-item"
-                    fxLayoutAlign="center"
-                    matTooltip=""
-                    [routerLink]="['log-in']"
-                >
-                    Log In
-                </a>
-            </ng-template>
+                Explore
+            </a> -->
+            
         </div>
     </div>
 </header>

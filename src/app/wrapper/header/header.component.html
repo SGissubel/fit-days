@@ -3,9 +3,29 @@
         <a [routerLink]="[ '/home']" class="header-title">Fit Days</a>
     </div>
     <div fxFlex></div>
-    <div fxLayoutAlign="end center" fxFlexOffset="20px">
-        <button mat-icon-button class="example-icon">
+    <div class="nav-menu-light" fxLayoutAlign="end center" fxFlexOffset="20px">
+        <ng-container *ngIf="loggedIn; else loggedOut">
+            <a
+                class="primary-nav-anchor navigation-menu-item"
+                fxLayoutAlign="center"
+                matTooltip=""
+                (click)="logOut()"
+            >
+                Log Out
+            </a>
+        </ng-container>
+        <ng-template #loggedOut>
+            <a
+                class="primary-nav-anchor navigation-menu-item"
+                fxLayoutAlign="center"
+                matTooltip=""
+                [routerLink]="['log-in']"
+            >
+                Log In
+            </a>
+        </ng-template>
+        <!-- <button mat-icon-button class="example-icon">
             <mat-icon>share</mat-icon>
-        </button>
+        </button> -->
     </div>
 </mat-toolbar>

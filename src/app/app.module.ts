@@ -14,6 +14,7 @@ import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FooterComponent } from './wrapper/footer/footer.component';
 import { NavigationComponent } from './wrapper/navigation/navigation.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { NavigationComponent } from './wrapper/navigation/navigation.component';
     DayComponent,
     HeaderComponent,
     FooterComponent,
+    LoginComponent,
     NavigationComponent
   ],
   imports: [
