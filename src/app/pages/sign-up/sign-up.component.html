@@ -1,0 +1,42 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+    <mat-card>
+        <mat-card-title>Login</mat-card-title>
+        <mat-card-content>
+            <form [formGroup]="formGroup">
+
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Username" formControlName="userName">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Email" formControlName="email">
+                    <mat-error *ngIf="formControls.email.invalid">
+                        {{ getErrorMessage() }}
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Verify Email" formControlName="verifyEmail">
+                </mat-form-field>
+                <mat-form-field>
+                    <input type="password" matInput placeholder="Password" formControlName="password">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input type="password" matInput placeholder="Verify Password" formControlName="passwordVerify">
+                </mat-form-field>
+
+                <div class="button">
+                    <button (click)="signUp()" mat-button>Login</button>
+                </div>
+
+            </form>
+
+            <div class="signup-text">
+                <a [routerLink]="['log-in']">
+                    Already have a log in? Sign in!
+                </a>
+            </div>
+        </mat-card-content>
+    </mat-card>src/app/
+</div>

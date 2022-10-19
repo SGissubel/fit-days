@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
@@ -17,6 +18,8 @@ import { LandingPageVideoComponent } from './pages/landing-page/landing-page-vid
 import { LoginComponent } from './pages/login/login.component';
 import { MaterialModule } from './material.module';
 import { NavigationComponent } from './wrapper/navigation/navigation.component';
+import { RouterModule } from '@angular/router';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +31,14 @@ import { NavigationComponent } from './wrapper/navigation/navigation.component';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
+    SignUpComponent,
     NavigationComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    RouterModule,
     FormsModule,
     CommonModule,
     MaterialModule,

@@ -1,13 +1,17 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink";
 @import '~@angular/material/theming';
 @import '~@angular/cdk/overlay-prebuilt.css';
 @import 'src/assets/styles/icons.scss';
 @import 'src/assets/styles/fonts.scss';
 @import 'src/assets/styles/colors.scss';
 @import 'src/assets/styles/navigation.scss';
+@import 'src/assets/styles/pages.scss';
+@import 'src/assets/styles/buttons.scss';
+@import 'src/assets/styles/formatting.scss';
 
 body {
     margin: 0 !important;
-    font-family: monospace;
+    font-family: monospace !important;
 }
 
 .header-component {

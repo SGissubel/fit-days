@@ -1,0 +1,10 @@
+@import 'src/assets/styles/colors.scss';
+
+.cta-button {
+    margin-top: 25px;
+    width: 250px;
+    height: 40px;
+    font-size: 1.25em;
+    background-color: #00a3af !important;
+    color: $theme-icon-light;
+}

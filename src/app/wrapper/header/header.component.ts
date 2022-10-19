@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
   logOut() {
     // pop up - are you sure?
     // yes? - call service - log user out - navigate...
-    //   this.router.navigate(['home']);
+    this.router.navigate(['home']);
 
   }
 

@@ -3,11 +3,11 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  selector: 'app-sign-up',
+  templateUrl: './sign-up.component.html',
+  styleUrls: ['./sign-up.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class SignUpComponent implements OnInit {
   formGroup: FormGroup;
   formControls: any;
 
@@ -22,22 +22,21 @@ export class LoginComponent implements OnInit {
 
   initializeForm() {
     this.formGroup = this.fb.group({
-      email: new FormControl('', [Validators.required, Validators.email]),
-      password: new FormControl('', [Validators.required])
+      userName: new FormControl('', [Validators.required]),
+      email: new FormControl('', [Validators.required]),
+      verifyEmail: new FormControl('', [Validators.required]),
+      password: new FormControl('', [Validators.required]),
+      passwordVerify: new FormControl('', [Validators.required])
     });
 
     this.formControls = this.formGroup.controls;
   }
 
   getErrorMessage() {
-    if (this.formControls.email.hasError('required')) {
-      return 'You must enter a value';
-    }
-
-    return this.formControls.email.hasError('email') ? 'Not a valid email' : '';
+// 
   }
 
-  logIn() {
-    // 
+  signUp() {
+
   }
 }

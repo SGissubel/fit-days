@@ -1,0 +1,24 @@
+@import 'src/assets/styles/fonts.scss';
+@import 'src/assets/styles/colors.scss';
+
+.login-container {
+    min-height: calc(100vh - 100px);
+    .login-mat-card-container {
+        height: 500px;
+        width: calc(30vw - 100px);
+        min-width: 300px;
+    }
+    .login-mat-card-content {
+        height: 400px;
+    }
+}
+
+.card-title {
+    background-color: $theme-nav-menu-background;
+    color: white;
+    margin-left: -15px;
+    margin-top: -15px;
+    margin-right: -15px;
+    padding: 15px;
+    font-family: monospace;
+}
